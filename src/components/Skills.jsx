@@ -34,11 +34,6 @@ function Skills() {
                  <ul className="fa-ul mb-0 ms-0 ps-0">
                     {skills.specialized.items.map((item, index) => (
                         <li key={index}>
-                            <span className="fa-li"><FaCheck /></span>
-                            {/* Replaced fa-li with explicit span/icon if needed or keep fa-li if using FontAwesome CSS. 
-                                Since we use react-icons, fa-li class might not work as expected without FA css.
-                                Let's stick to simple list for now or use react-icons properly.
-                             */}
                              <strong className="me-2">{item.name}:</strong> {item.details}
                         </li>
                     ))}

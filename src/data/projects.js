@@ -1,6 +1,6 @@
 export const projects = [
   {
-    title: "Core Platform – Order & Customer Services",
+    title: "Order & Customer Services - Core Platform",
     description: "Owned the architecture redesign of a core backend platform handling order and customer workflows. Migrated a fragmented multi‑repo ecosystem into a unified NestJS monorepo architecture.",
     technologies: ["NestJS", "Microservices", "Monorepo", "TypeScript"],
     impact: [
@@ -10,7 +10,7 @@ export const projects = [
     ]
   },
   {
-    title: "Gifta.com – B2C E‑commerce Platform",
+    title: "Gifta.com - B2C E‑commerce Platform",
     description: "Delivered platform features contributing to 10–12% revenue growth. Designed a token‑driven design system reducing bounce rate by ~32%.",
     technologies: ["React", "TypeScript", "Playwright", "Token-driven Design"],
     impact: [
@@ -20,7 +20,7 @@ export const projects = [
     ]
   },
   {
-    title: "SaaS Platform Modules (Amla Commerce)",
+    title: "Artifi Labs - SaaS Platform",
     description: "Designed and owned architecture for SaaS platform modules supporting multiple enterprise clients. Built browser-based visual designer using Canvas + FabricJS.",
     technologies: ["Canvas", "FabricJS", "React", "TypeScript"],
     impact: [

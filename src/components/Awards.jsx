@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaTrophy } from 'react-icons/fa';
 import { awards } from '../data/other';
 
 function Awards() {
@@ -9,8 +8,7 @@ function Awards() {
         <h2 className="mb-5">Awards & Certifications</h2>
         <ul className="fa-ul mb-0 ms-0 ps-0">
             {awards.map((award, index) => (
-                <li key={index} className="mb-2">
-                   <FaTrophy className="text-warning me-2" />
+                <li key={index} className="mb-2">``
                    {award}
                 </li>
             ))}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 import { profile } from '../data/profile';
 
 function About() {
@@ -11,7 +11,7 @@ function About() {
     <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
       <div className="w-100">
         <h1 className="mb-0">
-          {firstName} <span className="text-primary ms-3">{lastName}</span>
+          {firstName}<span className="text-primary ms-3">{lastName}</span>
         </h1>
         <div className="subheading mb-5">
           {role}<br /> 

@@ -19,15 +19,25 @@ function Experience() {
                     
                     {role.highlights && (
                         <ul className="fa-ul mb-0 ms-0 ps-0"> 
-                            {role.highlights.map((highlight, hIndex) => (
+                            {role.highlights.map((highlight, hIndex) => {
+                            const isHeader = highlight.startsWith('**');
+                            const text = highlight.replace(/\*\*/g, '');
+                            
+                            if (isHeader) {
+                                return (
+                                    <li key={hIndex} className="list-unstyled mt-3 mb-2">
+                                        <h5 className="fw-bold text-dark">{text}</h5>
+                                    </li>
+                                );
+                            }
+                            
+                            return (
                                 <li key={hIndex} className="mb-2">
-                                    {/* Rudimentary markdown bold parsing */}
-                                    {highlight.startsWith('**') ? 
-                                        <strong>{highlight.replace(/\*\*/g, '')}</strong> : 
-                                        highlight
-                                    }
+                                    <span className="fa-li"><i className="fas fa-check"></i></span>
+                                    {highlight}
                                 </li>
-                            ))}
+                            );
+                        })}
                         </ul>
                     )}
                  </div>
