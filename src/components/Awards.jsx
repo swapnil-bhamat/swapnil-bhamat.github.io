@@ -8,7 +8,7 @@ function Awards() {
         <h2 className="mb-5">Awards & Certifications</h2>
         <ul className="fa-ul mb-0 ms-0 ps-0">
             {awards.map((award, index) => (
-                <li key={index} className="mb-2">``
+                <li key={index} className="mb-2">
                    {award}
                 </li>
             ))}
