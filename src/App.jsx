@@ -9,14 +9,25 @@ import Interests from './components/Interests';
 import Awards from './components/Awards';
 import './scss/main.scss';
 
+import { Helmet } from 'react-helmet-async';
+import { profile } from './data/profile';
+
 function App() {
-  
-  // Basic scrollspy effect (optional, better with a library like react-scrollspy, 
-  // but for simplicity we rely on Bootstrap's native behavior if imported, 
-  // or just simple anchor links which work by default)
+  const { name, role, summary } = profile;
   
   return (
     <div className="App">
+       <Helmet>
+         <title>{name} - {role}</title>
+         <meta name="description" content={summary.substring(0, 160)} />
+         <meta name="keywords" content="Software Architect, Staff Engineer, Distributed Systems, Cloud Native, React, Swapnil Bhamat" />
+         <meta property="og:title" content={`${name} - Portfolio`} />
+         <meta property="og:description" content={summary.substring(0, 160)} />
+         <meta property="og:type" content="website" />
+         <meta name="twitter:card" content="summary_large_image" />
+         <meta name="twitter:title" content={`${name} - Portfolio`} />
+         <meta name="twitter:description" content={summary.substring(0, 160)} />
+       </Helmet>
        <Sidebar />
        <div className="container-fluid p-0">
            <About />
